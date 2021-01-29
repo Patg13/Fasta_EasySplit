@@ -2,15 +2,12 @@
 A python3 script to easily and safely split a fasta file into multiple parts
 
 ##USAGE:
-  -h, --help            show this help message and exit
+
+  -h, --help    ---> show this help message and exit
   
-  -f FASTA_FILE, --fas FASTA_FILE
-  
-                        Fasta file to split [REQUIRED]
+  -f FASTA_FILE, --fas FASTA_FILE    ---> Fasta file to split [REQUIRED]
                         
-  -s SPLIT_LEVEL, --split SPLIT_LEVEL
-  
-                        Number of files to generate (int > 1) [REQUIRED]
+  -s SPLIT_LEVEL, --split SPLIT_LEVEL    ---> Number of files to generate (int > 1) [REQUIRED]
                         
                         
 The output will be SPLIT_LEVEL files with an ordered number extension (file.fasta.1, file.fasta.2, etc.)
