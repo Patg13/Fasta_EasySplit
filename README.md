@@ -13,7 +13,7 @@ A python3 script to easily and safely split a fasta file into multiple parts
           
 The output will be SPLIT_LEVEL files with an ordered number extension (file.fasta.1, file.fasta.2, etc.)
 
-This program first have to count the sequence in the fasta file. If you are on a POSIX system, the program will use subprocess to launch a grep and a wc command (which is very fasta and low memory requirement) to count the sequence. If you are on a Windows system (or any system that don't support grep or wc), the program will use an internal counting method which takes more time.
+This program first have to count the sequence in the fasta file. If you are on a POSIX system (Ubuntu, Centos, etc.), the program will use subprocess to launch a grep and a wc command (which is very fast and have a very low memory requirement) to count the sequence. If you are on a Windows system (or any system that don't support grep or wc), the program will use an internal counting method which takes more time.
 
 Also note the this program will NOT import the file into memory, so it can be used on very large files.
 
